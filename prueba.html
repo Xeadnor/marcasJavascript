@@ -85,33 +85,105 @@ document.write(numeros)*/
 
 /*9. Solicite números al usuario y calcule la media aritmética de todos ellos. Para
 terminar de introducir números, el usuario introducirá un número negativo. Realizar
-el mismo ejercicio para las medias armónica, cuadrática y geométrica*/
+el mismo ejercicio para las medias armónica, cuadrática y geométrica
 let cantidad =(parseInt(prompt("Indica cuantos numeros vas a introducir")))
 let numeros = new Array(cantidad)
 for (let index = 0; index < numeros.length; index++) {
     numeros[index] = parseInt(prompt("Introduce valor"))
 }
 let resultado = media(numeros)
-document.write(resultado)
-
+document.write(resultado)*/
 
 /*10. Solicite números enteros al usuario. Para terminar de introducir números, el usuario
 introducirá el cero. A continuación se mostrará un sencillo histograma: El número de
 positivos y el número de negativos usando asteriscos (uno para cada ocurrencia)
-11. Solicite la estatura y el peso del usuario y, basándose en el cálculo de su IMC le
+let numero = 0;
+let counterPositivo = 0;
+let counterNegativo = 0;
+do {
+     numero = prompt("Introducir el valor")
+    if (numero > 0){
+        counterPositivo++
+    }else if (numero <0) {
+        counterNegativo++
+    }
+    
+} while (numero != 0);
+document.write("Numero de positivos = ")
+
+for (let i = 0; i < counterPositivo; i++) {
+    document.write("*")
+    
+}
+document.write("<br>")
+document.write("Numero de negativos = ")
+for (let i = 0; i < counterNegativo; i++) {
+    document.write("*")
+    
+}*/
+
+/*11. Solicite la estatura y el peso del usuario y, basándose en el cálculo de su IMC le
 informe de su estado nutricional
-12. Solicite un número al usuario y muestre la suma de todos los números naturales
+let estatura = parseFloat(prompt("Introduzca su estatura en metros"))
+let peso = parseInt(prompt("Introduzca su peso en kg"))
+
+let resultado = imc(estatura,peso)
+document.write(resultado)*/
+
+/*12. Solicite un número al usuario y muestre la suma de todos los números naturales
 desde el 1 hasta el número introducido
-13. Solicite dos números al usuario y muestre la suma de todos los números naturales
+let numero = parseInt(prompt("Introduce un numero"))
+let aux = 0;
+for (let i = 1; i <= numero; i++) {
+    aux += i;
+    
+}
+document.write(aux)*/
+
+/*13. Solicite dos números al usuario y muestre la suma de todos los números naturales
 entre ellos incluyendo ambos
-14. Solicite una hora del día al usuario entre las 0 y las 11 y un número de horas. Se
+let numero = parseInt(prompt("Introduce el primer"))
+let numero2 = parseInt(prompt("Introduce el segundo numero"))
+let aux = 0;
+for (let i = numero; i < numero2; i++) {
+    aux += i;
+    
+}
+document.write(aux)*/
+
+
+
+/*14. Solicite una hora del día al usuario entre las 0 y las 11 y un número de horas. Se
 mostrará que hora indicará el reloj pasadas ese número de horas
-15. Solicite un número al usuario y muestre todos sus múltiplos del 0 al 100
-16. Solicite un número y muestre el número de dígitos que lo forman
-17. Solicite un número y muestre sus dígitos invertidos
-18. Solicite un importe e indique el importe con IVA
-19. Solicite un importe con IVA y lo indique sin IVA
-20. Solicite un año e indique si es bisiesto o no
+let horaActual = parseInt(prompt("Introduce la hora actual entre las 0 y las 11 "))
+let horas = parseInt(prompt("Introduce el numero de horas que pasa "))
+let resultado = horaActual + horas;
+while(resultado > 24){
+    resultado -= 24;
+}
+document.write(resultado)*/
+
+
+/*15. Solicite un número al usuario y muestre todos sus múltiplos del 0 al 100
+let numero = parseInt(prompt("Introduce el valor"))
+for (let i = numero; i < 101; i++) {
+    document.write(i + " , ")
+    
+}*/
+
+/*16. Solicite un número y muestre el número de dígitos que lo forman
+let numero =(prompt("Introduzca un valor"))
+document.write(numero.length)*/
+
+
+/*17. Solicite un número y muestre sus dígitos invertidos*/
+let numero =(prompt("Introduzca un valor"))
+let resultado = reverse(numero.substr(1)) + numero.charAt(0)
+document.write(resultado)
+
+/*18. Solicite un importe e indique el importe con IVA
+/*19. Solicite un importe con IVA y lo indique sin IVA
+/*20. Solicite un año e indique si es bisiesto o no
 21. Solicite duraciones de tramos de viaje en minutos (hasta que se introduzca un cero o
 un valor negativo) y muestre la duración del viaje en horas y minutos
 22. Solicite un número y muestre su parte decimal
