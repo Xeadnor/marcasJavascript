@@ -107,3 +107,13 @@ else if (imc > 30) {
 }
 return resultado;
 }
+
+function esBisiesto(año){
+    let resultado = "";
+    if ((año % 4 == 0) && ((año % 100 != 0) || (año % 400 == 0)))
+	resultado = "Es bisiesto"
+else
+	resultado = "No es bisiesto"
+
+    return resultado
+}

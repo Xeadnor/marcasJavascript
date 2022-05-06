@@ -176,23 +176,53 @@ let numero =(prompt("Introduzca un valor"))
 document.write(numero.length)*/
 
 
-/*17. Solicite un número y muestre sus dígitos invertidos*/
+/*17. Solicite un número y muestre sus dígitos invertidos
 let numero =(prompt("Introduzca un valor"))
 let resultado = reverse(numero.substr(1)) + numero.charAt(0)
-document.write(resultado)
+document.write(resultado)*/
 
 /*18. Solicite un importe e indique el importe con IVA
+let importe = parseFloat(prompt("Introduzca el precio"))
+let resultado = (importe + (importe*0.21))
+document.write(resultado)*/
+
+
 /*19. Solicite un importe con IVA y lo indique sin IVA
+let importeIVA = parseFloat(prompt("Introduzca el precio con iva" ))
+let resultado = (importeIVA - (importeIVA*0.21))
+document.write(resultado)*/
+
+
 /*20. Solicite un año e indique si es bisiesto o no
-21. Solicite duraciones de tramos de viaje en minutos (hasta que se introduzca un cero o
+let año = parseInt(prompt("Introduzca un año"))
+let resultado = esBisiesto(año)
+document.write(resultado)*/
+
+
+
+/*21. Solicite duraciones de tramos de viaje en minutos (hasta que se introduzca un cero o
 un valor negativo) y muestre la duración del viaje en horas y minutos
-22. Solicite un número y muestre su parte decimal
-23. Solicite un número y muestre su parte entera
-24. Solicite dos números y calcule su división indicando si ésta es exacta o no
-25. Solicite una base y un exponente y calcule la potencia
-26. Solicite un número al usuario y muestre todas las potencias de dos desde la 0-ésima
+let numero = 0;
+let minutos = 0;
+let horas = 0;
+do {
+     numero = parseInt(prompt("Introducir el tramo en minutos"))
+    minutos += numero
+    
+} while (numero != 0 || numero < 0)
+while(minutos > 60){
+        minutos -= 60;
+        horas++
+    }
+document.write("Horas = " + horas + ", Minutos = " + minutos)*/
+
+/*22. Solicite un número y muestre su parte decimal*/
+/*23. Solicite un número y muestre su parte entera
+/*24. Solicite dos números y calcule su división indicando si ésta es exacta o no
+/*25. Solicite una base y un exponente y calcule la potencia
+/*26. Solicite un número al usuario y muestre todas las potencias de dos desde la 0-ésima
 hasta la ingresada por el usuario
-27. Solicite un número y muestre su factorial
+/*27. Solicite un número y muestre su factorial
 28. Solicite dos números y muestre su coeficiente binomial
 29. Calcule el número de puntos que suman las fichas del juego del dominó
 30. Muestre las distintas combinaciones al lanzar dos dados
