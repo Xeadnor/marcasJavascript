@@ -216,29 +216,203 @@ while(minutos > 60){
     }
 document.write("Horas = " + horas + ", Minutos = " + minutos)*/
 
-/*22. Solicite un número y muestre su parte decimal*/
+/*22. Solicite un número y muestre su parte decimal
+let numero = parseFloat(prompt("Introduzca un numero"))
+let numero2 = Math.trunc(numero)
+numero = numero - numero2
+document.write(numero)*/
+
 /*23. Solicite un número y muestre su parte entera
+let numero = parseFloat(prompt("Introduzca un numero"))
+Math.trunc(numero)
+document.write(numero)*/
+
 /*24. Solicite dos números y calcule su división indicando si ésta es exacta o no
+let numero1 = parseInt(prompt("Introduzca numero1"))
+let numero2 = parseInt(prompt("Introduzca numero2"))
+if(numero1 % numero2 != 0){
+    document.write("No es exacta")
+}else{
+    document.write("Es exacta")
+}*/
+
 /*25. Solicite una base y un exponente y calcule la potencia
+let base = parseInt(prompt("Introduzca la base"))
+let exponente = parseInt(prompt("Introduzca el exponente"))
+let resultado = Math.pow(base,exponente)
+document.write(resultado)*/
+
+
 /*26. Solicite un número al usuario y muestre todas las potencias de dos desde la 0-ésima
 hasta la ingresada por el usuario
+let numero = parseInt(prompt("Introduzca el valor de la potencia"))
+for (let i = 1; i <= numero ; i++) {
+    document.write("2 elevado a " + i + " es "+ Math.pow(2,i) + "<br>")
+    
+}*/
 /*27. Solicite un número y muestre su factorial
-28. Solicite dos números y muestre su coeficiente binomial
-29. Calcule el número de puntos que suman las fichas del juego del dominó
-30. Muestre las distintas combinaciones al lanzar dos dados
-31. Solicite un número y muestre el numero de combinaciones que existen para obtener
+let numero = parseInt(prompt("Introduzca un valor"))
+let resultado = 1
+document.write("El factorial de " + numero + " es " + "<br>")
+for (let i = numero; i >= 1; i--) {
+    document.write("!" + i + " , ")
+    resultado = resultado * i
+}
+document.write( "<br>" + resultado)*/
+
+/*28. Solicite dos números y muestre su coeficiente binomial
+
+let n = parseInt(prompt("Introducir primer valor"))
+let k = parseInt(prompt("Introducir segundo valor"))
+    let res = n;
+    for(let i = 2; i <= k; i++){
+      res *= (n - i + 1) / i;
+    }
+    document.write(Math.round(res))*/
+
+/*29. Calcule el número de puntos que suman las fichas del juego del dominó
+let fichas = 6;
+let suma = 0;
+for (let i = 0; i <= fichas; i++) {
+    suma = suma +i
+    for (let j = 0; j < 6; j++) {
+    fichas--
+    suma = suma + j
+    }
+    
+}
+document.write(suma)*/
+
+
+/*30. Muestre las distintas combinaciones al lanzar dos dados
+let dado = 6
+for (let i = 2; i <= dado*2; i++) {
+    document.write(i + " , ")
+    
+}*/
+/*31. Solicite un número y muestre el numero de combinaciones que existen para obtener
 ese número lanzando dos dados y sumando sus puntuaciones
-32. Solicite un número en base decimal y lo muestre en binario, octal y hexadecimal
-33. Solicite un número y muestre la parte entera de su raíz cuadrada
-34. Solicite un número y muestre todos sus divisores
-35. Solicite dos números e indique sus divisores comunes
-36. Juegue al Fizz buzz
-37. Solicite un número e indique si es primo o no
-38. Solicite dos números y muestre su máximo común divisor
-39. Solicite un número y lo descomponga en factores primos
-40. Solicite un número y calcule la suma de sus dígitos
-41. Muestre la tabla de multiplicar
-42. Implemente una sencilla calculadora, en la que se solicite el primer operando, un
+let dado = 6
+let numero = parseInt(prompt("introduzca el numero"))
+
+for (let i = 1; i < dado; i++) {
+    for (let j = 1; j < dado; j++) {
+        if(j+i==numero){
+            document.write(j +" + "+ i + "<br>")
+        }
+    }
+    
+}*/
+
+/*32. Solicite un número en base decimal y lo muestre en binario, octal y hexadecimal
+let numero = parseInt(prompt("Introduzca un numero"))
+document.write("En base decimal = " + numero + "<br>")
+let num = numero;
+let binary = num.toString(2)
+document.write("En base binario = " + binary + "<br>")
+num = numero
+let octal = num.toString(8)
+document.write("En base octal = " + octal + "<br>")
+num = numero
+let hexadecimal = num.toString(16)
+document.write("En base hexadecimal = " + hexadecimal + "<br>")*/
+
+
+/*33. Solicite un número y muestre la parte entera de su raíz cuadrada
+let numero = parseInt(prompt("introduzca un numero"))
+let valor= Math.sqrt(numero)
+let resultado = Math.trunc(valor)
+document.write(resultado)*/
+
+/*34. Solicite un número y muestre todos sus divisores
+let numero = parseInt(prompt("introduzca un numero"))
+for (let i = 0; i <= numero; i++) {
+    if(numero % i == 0){
+        document.write(i + " es divisor<br>")
+    }
+    
+}*/
+/*35. Solicite dos números e indique sus divisores comunes
+let numero = parseInt(prompt("introduzca un numero"))
+let numero2 = parseInt(prompt("introduzca un 2º numero"))
+for (let i = 0; i <= numero; i++) {
+    if(numero % i == 0 && numero2 % i == 0){
+        document.write(i + " es divisor<br>")
+    }
+}*/
+/*36. Juegue al Fizz buzz
+for (let i = 1; i < 100; i++) {
+    if(i % 3 != 0 && i % 5 != 0){
+        document.write(i + ", ")
+    }else if (i % 3 == 0 && i % 5 != 0) {
+        document.write("fizz , ")
+    } else if(i % 3 != 0 && i % 5 == 0){
+        document.write("buzz , ")
+    }else{
+        document.write("fizzbuzz , ")
+    }
+    
+}*/
+
+/*37. Solicite un número e indique si es primo o no
+let numero = parseInt(prompt("introduzca un numero"))
+let counter = 0;
+for (let i = 1; i <= numero; i++) {
+    if(numero % i == 0){
+        counter++
+    }
+    
+}
+if(counter > 2){
+    document.write("No es primo")
+}else{
+    document.write("Es primo")
+}*/
+/*38. Solicite dos números y muestre su máximo común divisor
+let numero = parseInt(prompt("introduzca un numero"))
+let numero2 = parseInt(prompt("introduzca un 2 numero"))
+let counter=0;
+
+for (let i = 1; i <= numero; i++) {
+    if(numero % i == 0 && numero2 % i == 0){
+        if(counter < i){
+            counter = i
+        }
+    }
+    
+}
+document.write(counter)*/
+
+/*39. Solicite un número y lo descomponga en factores primos
+let numero = parseInt(prompt("introduzca un numero"))
+let counter = 0;
+for (let i = numero-1; i > 0; i--) {
+    if(numero % i == 0){
+        counter = i
+    }
+ 
+     while (numero > counter || counter!=1) {
+
+        document.write(counter + "<br>")
+        numero = numero / counter
+    }
+}*/
+    
+
+/*40. Solicite un número y calcule la suma de sus dígitos
+let numero= prompt("introduzca un número")
+let resultado = 0
+for (let i = 0; i < numero.length; i++) {
+    resultado = resultado + parseInt(numero.charAt(i))
+}
+document.write(resultado)*/
+
+/*41. Muestre la tabla de multiplicar
+let numero= parseInt(prompt("introduzca un número"))
+for (let i = 1; i < 11; i++) {
+   document.write(numero + "x" + i + "=" +(numero*i) + "<br>")
+}*/
+/*42. Implemente una sencilla calculadora, en la que se solicite el primer operando, un
 operador aritmético y el segundo operando para mostrar a continuación el resultado
 43. Solicite números entre 0 y 998 hasta que el usuario introduzca el 999, en ese
 momento muestra la suma de todos ellos (menos el 999)
