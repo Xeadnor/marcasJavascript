@@ -117,3 +117,49 @@ else
 
     return resultado
 }
+
+function calculadora(x,operador,y){
+    let resultado = 0;
+    switch (operador) {
+        case "*":
+            resultado = x * y
+            break;
+        case "+":
+            resultado = x + y
+            break;   
+        case "-":
+            resultado = x - y
+            break;
+        case "/":
+            resultado = x / y
+            break; 
+    }
+    return resultado;
+
+}
+
+function triangulo(l1,l2,l3) {
+    let resultado = "";
+    if (l1 == l2 && l1 == l3 && l2==l3){
+        resultado = "Triangulo equilatero"
+    }
+    if (l1 == l3 && l2!=l3 | l1 == l2 && l1 != l3 | l1 != l2 && l2 == l3){
+        resultado = "Triangulo isosceles"
+    }
+    if (l1 != l2 && l1 !=l3 && l2 != l3){
+        resultado = "Triangulo escaleno"
+    }
+
+    // SIN TERMINAR
+    if (l1 == l2 && l1 == l3 && l2==l3){
+        resultado = "Triangulo equilatero"
+    }
+    if (l1 == l2 && l1 == l3 && l2==l3){
+        resultado = "Triangulo equilatero"
+    }
+
+
+
+
+    return resultado
+}

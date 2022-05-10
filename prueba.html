@@ -413,25 +413,60 @@ for (let i = 1; i < 11; i++) {
    document.write(numero + "x" + i + "=" +(numero*i) + "<br>")
 }*/
 /*42. Implemente una sencilla calculadora, en la que se solicite el primer operando, un
-operador aritmético y el segundo operando para mostrar a continuación el resultado*/
-let variable
+operador aritmético y el segundo operando para mostrar a continuación el resultado
+let x = parseInt(prompt("Introduzca el primer numero"))
+let operador = prompt("Introduzca el operador")
+let y = parseInt(prompt("Introduzca el segundo numero"))
+let resultado = calculadora(x,operador,y)
+document.write(resultado)*/
 /*43. Solicite números entre 0 y 998 hasta que el usuario introduzca el 999, en ese
 momento muestra la suma de todos ellos (menos el 999)
-44. Solicite un número de segundos y muestre este dato en horas, minutos y segundos
-45. Solicite tres números al usuario e indique si forman los lados de un triángulo y en
-caso afirmativo qué tipo de triángulo
-46. Solicite números al usuario y muestre cuantos números mayores que cero se han
-introducido y la suma de todos ellos. Para terminar, el usuario introducirá el cero
-47. Calcule el número de años que deben transcurrir para que la suma de las edades de
+let resultado = 0
+let numero = 0
+do {
+    numero = parseInt(prompt("Introduzca un numero"))
+    resultado += numero
+
+} while (numero != 999);
+document.write(resultado)*/
+
+/*44. Solicite un número de segundos y muestre este dato en horas, minutos y segundos
+
+    let segundosTotales = parseInt(prompt("Introducir el tramo en segundos"))
+    let minutos = 0;
+    let horas = 0;
+
+while(segundosTotales > 60){
+        segundosTotales -= 60;
+        minutos++
+    }
+    while(minutos > 60){
+        minutos -= 60;
+        horas++
+    }
+document.write("Horas = " + horas + ", Minutos =  " + minutos + ", Segudos = " + segundosTotales)*/
+
+/*45. Solicite tres números al usuario e indique si forman los lados de un triángulo y en
+caso afirmativo qué tipo de triángulo*/
+let lado1 = parseInt(prompt("introduzca primer lado"))
+let lado2 = parseInt(prompt("introduzca segundo lado"))
+let lado3 = parseInt(prompt("introduzca tercer lado"))
+
+let resultado = triangulo(lado1,lado2,lado3)
+document.write(resultado)
+
+/*46. Solicite números al usuario y muestre cuantos números mayores que cero se han
+introducido y la suma de todos ellos. Para terminar, el usuario introducirá el cero*/
+/*47. Calcule el número de años que deben transcurrir para que la suma de las edades de
 tres hijos de 14, 12 y 9 años sea igual a la edad de su padre que ahora tiene 43
-años
-48. Solicite las dimensiones de una matriz, y muestre únicamente aquéllas posiciones
-cuyas coordenadas sean, ambas, impares
-49. Solicite al usuario un PIN (número de cuatro dígitos) y le ofrezca tres oportunidades
-para introducir el mismo que uno elegido por el desarrollador
-50. Solicite el número de horas que se ha trabajado y el número de horas extra y calcule
-la nómina semanal bruta. La hora normal se paga a 10€ y la extra a 15€
-51. Solicite la edad de un padre y la de su hijo y muestre el número de años que deben
+años*/
+/*48. Solicite las dimensiones de una matriz, y muestre únicamente aquéllas posiciones
+cuyas coordenadas sean, ambas, impares*/
+/*49. Solicite al usuario un PIN (número de cuatro dígitos) y le ofrezca tres oportunidades
+para introducir el mismo que uno elegido por el desarrollador*/
+/*50. Solicite el número de horas que se ha trabajado y el número de horas extra y calcule
+la nómina semanal bruta. La hora normal se paga a 10€ y la extra a 15€*/
+/*51. Solicite la edad de un padre y la de su hijo y muestre el número de años que deben
 transcurrir hasta que la edad del padre doble a la del hijo
 52. Solicite un número y muestre el triángulo de Pascal de altura igual al número
 introducido
