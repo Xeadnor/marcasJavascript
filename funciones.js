@@ -110,7 +110,7 @@ return resultado;
 
 function esBisiesto(año){
     let resultado = "";
-    if ((año % 4 == 0) && ((año % 100 != 0) || (año % 400 == 0)))
+    if ((año % 4 == 0) && ((año % 200 != 0) || (año % 400 == 0)))
 	resultado = "Es bisiesto"
 else
 	resultado = "No es bisiesto"
