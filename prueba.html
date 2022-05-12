@@ -447,23 +447,89 @@ while(segundosTotales > 60){
 document.write("Horas = " + horas + ", Minutos =  " + minutos + ", Segudos = " + segundosTotales)*/
 
 /*45. Solicite tres números al usuario e indique si forman los lados de un triángulo y en
-caso afirmativo qué tipo de triángulo*/
+caso afirmativo qué tipo de triángulo
 let lado1 = parseInt(prompt("introduzca primer lado"))
 let lado2 = parseInt(prompt("introduzca segundo lado"))
 let lado3 = parseInt(prompt("introduzca tercer lado"))
 
 let resultado = triangulo(lado1,lado2,lado3)
-document.write(resultado)
+document.write(resultado)*/
 
 /*46. Solicite números al usuario y muestre cuantos números mayores que cero se han
-introducido y la suma de todos ellos. Para terminar, el usuario introducirá el cero*/
+introducido y la suma de todos ellos. Para terminar, el usuario introducirá el cero
+let count = 0
+let sumatorio = 0
+let numero = 1
+ do {
+    numero = parseInt(prompt("Introducir un valor"))
+    if(numero > 0){
+        count++
+    }
+    sumatorio = sumatorio + numero
+    
+} while (numero != 0);
+document.write("Numeros mayores que 0 =  " + count + ". La suma de ellos es = " + sumatorio)*/ 
+
 /*47. Calcule el número de años que deben transcurrir para que la suma de las edades de
 tres hijos de 14, 12 y 9 años sea igual a la edad de su padre que ahora tiene 43
-años*/
+años
+let edad1 = 14
+let edad2 = 12
+let edad3 = 9
+let edadPadre = 43
+let años = 0;
+
+do {
+    edad1++
+    edad2++
+    edad3++
+    edadPadre++
+    años++
+    
+} while (edad1+edad2+edad3 != edadPadre)
+document.write("Han transcurrido " + años + " años")*/
+
 /*48. Solicite las dimensiones de una matriz, y muestre únicamente aquéllas posiciones
-cuyas coordenadas sean, ambas, impares*/
+cuyas coordenadas sean, ambas, impares
+varios=['A',[1,2,3]]
+let dimension1 = parseInt(prompt("Introduzca la primera dimension X"))
+let dimension2 = parseInt(prompt("Introduzca la segunda dimension Y"))
+let posiciones = new Array[dimension1,dimension2]
+for (let i = 0; i < posiciones.length; i++) {
+    for (let j = 0; j < posiciones[0].length; j++) {
+        if(i % 2== 0 && j % 2 == 0){
+        posiciones[i][j]= "-"
+        }else{
+            posiciones[i][j]= "x"
+        }
+        
+    }
+}
+for (let i = 0; i < posiciones.length; i++) {
+    for (let j = 0; j < posiciones[0].length; j++) {
+        document.write(posiciones[i][j] + " ")
+    }
+    document.write("<br>")
+}*/
+
+
 /*49. Solicite al usuario un PIN (número de cuatro dígitos) y le ofrezca tres oportunidades
-para introducir el mismo que uno elegido por el desarrollador*/
+para introducir el mismo que uno elegido por el desarrollador
+let pinDesarollador = 2210
+let contador=0
+let pinUsuario = 0
+do {
+    pinUsuario= parseInt(prompt("Introduzca un PIN"))
+    contador++
+} while ( contador != 3 && pinUsuario != pinDesarollador);
+
+if(contador <3){
+    document.write("Acceso permitido")
+    
+}else{
+    document.write("Se ha pasado del numero de intentos")
+}*/
+
 /*50. Solicite el número de horas que se ha trabajado y el número de horas extra y calcule
 la nómina semanal bruta. La hora normal se paga a 10€ y la extra a 15€*/
 /*51. Solicite la edad de un padre y la de su hijo y muestre el número de años que deben

@@ -143,23 +143,11 @@ function triangulo(l1,l2,l3) {
     if (l1 == l2 && l1 == l3 && l2==l3){
         resultado = "Triangulo equilatero"
     }
-    if (l1 == l3 && l2!=l3 | l1 == l2 && l1 != l3 | l1 != l2 && l2 == l3){
+    if (l1 == l3 && l2!=l3 | l2 == l2 && l1 != l3 | l1 != l2 && l2 == l3){
         resultado = "Triangulo isosceles"
     }
     if (l1 != l2 && l1 !=l3 && l2 != l3){
         resultado = "Triangulo escaleno"
     }
-
-    // SIN TERMINAR
-    if (l1 == l2 && l1 == l3 && l2==l3){
-        resultado = "Triangulo equilatero"
-    }
-    if (l1 == l2 && l1 == l3 && l2==l3){
-        resultado = "Triangulo equilatero"
-    }
-
-
-
-
     return resultado
 }
