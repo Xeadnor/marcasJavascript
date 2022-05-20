@@ -608,18 +608,43 @@ while(numUsu!=numero){
 /*57. Solicite un número y muestre los dígitos de todos los números desde el 0 hasta el
 solicitado en columnas, por ejemplo, para el número 26:
 000000000011111111112222222
-012345678901234567890123456
+012345678901234567890123456*/
+
+
+//NI PUTA IDEA 
+
+
 /*Cadenas de caracteres
-1. Solicite el nombre del usuario y le dé las buenas tardes
-2. Muestre los días de la semana (uno por línea)
-3. Solicite un carácter e indique si se trata de una letra, de un número o de otro tipo de
+/*1. Solicite el nombre del usuario y le dé las buenas tardes
+let nom=prompt("Introduzca su nombre")
+alert("Buenas tardes "+nom)*/
+
+/*2. Muestre los días de la semana (uno por línea)
+document.write("Lunes <br>Martes <br>Miercoles<br>Jueves<br>viernes <br>sabado<br>domingo ")*/
+
+/*3. Solicite un carácter e indique si se trata de una letra, de un número o de otro tipo de
 carácter
-4. Solicite dos palabras e indique cuál de las dos es más larga y por cuantos caracteres
-lo es
-5. Solicite un número de palabras. A continuación se pedirá al usuario que las
+let c =prompt("intoduzca un caracter")
+let ascii = 0
+if(isNaN(c)){
+    ascii=c.toUpperCase().charCodeAt(0);
+    if(ascii>64 && ascii<91){
+        document.write("Es una letra")
+    }else{
+    document.write("Es un caractér")}
+}else{
+    document.write("Es es un número")
+}*/
+
+
+/*4. Solicite dos palabras e indique cuál de las dos es más larga y por cuantos caracteres
+lo es*/
+
+
+/*5. Solicite un número de palabras. A continuación se pedirá al usuario que las
 introduzca. Para terminar se mostrará la palabra más corta y la más larga
-6. Solicite una cadena de caracteres e indique si es un palíndromo o no
-7. Solicite una cadena de caracteres y elimine los espacios innecesarios,es decir,
+/*6. Solicite una cadena de caracteres e indique si es un palíndromo o no
+/*7. Solicite una cadena de caracteres y elimine los espacios innecesarios,es decir,
 elimine todos los espacios al comienzo y al final de la cadena y mantenga un único
 espacio entre dos palabras
 8. Solicite al usuario un número y muestre una pirámide de asteriscos cuya base
