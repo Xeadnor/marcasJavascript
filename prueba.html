@@ -531,25 +531,54 @@ if(contador <3){
 }*/
 
 /*50. Solicite el número de horas que se ha trabajado y el número de horas extra y calcule
-la nómina semanal bruta. La hora normal se paga a 10€ y la extra a 15€*/
+la nómina semanal bruta. La hora normal se paga a 10€ y la extra a 15€
+let numHoras= parseInt(prompt("introduzca el número de horas/semana"))
+let numHorasExtra= parseInt(prompt("introduzca el número de horas extra/semana"))
+
+let nomina= (numHoras*10)+ (numHorasExtra*15)
+
+document.write("El total a cobrar según las horas especificadas es de "+ nomina+"€ brutos/semana.")*/ 
+
 /*51. Solicite la edad de un padre y la de su hijo y muestre el número de años que deben
-transcurrir hasta que la edad del padre doble a la del hijo
-52. Solicite un número y muestre el triángulo de Pascal de altura igual al número
+transcurrir hasta que la edad del padre doble a la del hijo*/
+
+let edadPadre=parseInt(prompt("introduzca la edad del padre"))
+
+let edadHijo=parseInt(prompt("introduzca la edad del hijo"))
+let contador=0
+
+while(edadPadre==(edadHijo*2)){
+    edadPadre++
+    edadHijo++
+
+    contador++
+}
+document.write("Deben de pasar "+ contador+ " años.")
+
+/*for (edadPadre; edadPadre < (edadHijo*2); edadPadre++) {
+        contador ++
+}
+document.write("Deben de pasar "+ contador+ " años.")*/
+
+
+
+/*52. Solicite un número y muestre el triángulo de Pascal de altura igual al número
 introducido
-53. Solicite los coeficientes de una ecuación de primer grado y muestre su solución
-54. Solicite los coeficientes de una ecuación de segundo grado y muestre su solución
-55. Solicite al usuario las coordenadas del centro y el radio de dos circunferencias e
+
+/*53. Solicite los coeficientes de una ecuación de primer grado y muestre su solución
+/*54. Solicite los coeficientes de una ecuación de segundo grado y muestre su solución
+/*55. Solicite al usuario las coordenadas del centro y el radio de dos circunferencias e
 indique si se cortan o no y en cuantos puntos
-56. Solicite números al usuario entre el 1 y el 100 hasta que se averigüe el que ha
+/*56. Solicite números al usuario entre el 1 y el 100 hasta que se averigüe el que ha
 elegido el desarrollador. Para ayudar al usuario, cada vez que éste introduzca un
 número, se le indicará si el número a averiguar es mayor o menor que el número
 introducido. Intercambiar los papeles y que sea ahora el usuario el que elije un
 número y el programa tratará de adivinarlo
-57. Solicite un número y muestre los dígitos de todos los números desde el 0 hasta el
+/*57. Solicite un número y muestre los dígitos de todos los números desde el 0 hasta el
 solicitado en columnas, por ejemplo, para el número 26:
 000000000011111111112222222
 012345678901234567890123456
-Cadenas de caracteres
+/*Cadenas de caracteres
 1. Solicite el nombre del usuario y le dé las buenas tardes
 2. Muestre los días de la semana (uno por línea)
 3. Solicite un carácter e indique si se trata de una letra, de un número o de otro tipo de
