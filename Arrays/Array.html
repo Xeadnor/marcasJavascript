@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArraysJS</title>
+</head>
+<body>
+
+    <script src="Array.js"></script>
+    <script type="text/javascript">
+/* 
+
+        let string = "Pablo cabron"
+    console.log(string.endsWith("lo"))
+    console.log(string.indexOf("o"))
+    console.log(string.replace("blo","ola"))
+    console.log(string.split(""))
+
+        let cadena = prompt("Cadena de texto")
+
+        cadena = cadena.replace(/ /g,"")
+
+        for (let i = 0; i < cadena.length; i++) {
+            document.write(cadena.charAt(i)+"-")
+        }
+        document.write("<br>")
+
+        let mitad = cadena.length/2;
+ 
+    let primeraMitad = cadena.substring(0,mitad)
+    let segundaMitad = cadena.substring(mitad,cadena.length)
+ 
+    document.write(primeraMitad.italics() + "<br>")
+    document.write(segundaMitad.fontcolor("red").fontsize(30)) 
+
+    let numero2 = [1,'A',2,4,'c',33]
+    let prueba = [1,17,50,20,40,2,7]
+    
+    numero2.push("Prueba")
+    numero2.unshift("primero")
+    
+    document.write(numero2 + "<br>")
+    
+    numero2.pop();
+    numero2.shift();
+    
+    document.write(numero2+ "<br>")
+    
+    document.write(numero2.reverse()+ "<br>")
+    document.write(numero2.sort())
+    console.log(prueba.sort(comparar))
+    let prueba2 = ["Pablo","pablo","Pablo","Ivan","Ainhoa","alvaro"]
+    console.log(prueba2.sort(comparar2))
+    // con slice copio un array
+
+    <script type="text/javascript">
+ 
+        let cadena = prompt("Cadena de texto")
+ 
+        cadena = cadena.replace(/ /g,"")
+ 
+        for (let i = 0; i < cadena.length; i++) {
+            document.write(cadena.charAt(i)+"-")
+        }
+        document.write("<br>")
+ 
+        let mitad = cadena.length/2;
+ 
+    let primeraMitad = cadena.substring(0,mitad)
+    let segundaMitad = cadena.substring(mitad,cadena.length)
+ 
+    document.write(primeraMitad.italics() + "<br>")
+    document.write(segundaMitad.fontcolor("red").fontsize(30))
+
+    
+ */
+
+
+/*  1. Dado un array de 10 posiciones que se rellenará con valores aleatorios, crea una función
+que solicite una posición por pantalla, la función deberá eliminar el elemento de la
+posición indicada y desplazar todos los elementos de forma que no queden huecos.
+Mostraremos el array inicial y el array final y el valor eliminado.
+a. ¿Cómo lo harías utilizando el método splice?
+b. ¿Cómo lo harías sin utilizar ningún método predefinido?
+
+let arrayInicial = [1,2,3,4,5,6,7,8,9,10]
+console.log(arrayInicial)
+let ArrayFinal = funcion1(arrayInicial)
+console.log(arrayInicial + "\n" + ArrayFinal) */
+
+/* 2. Crea una función que rellene con valores aleatorios comprendidos entre 14 y 25 un array
+de 10 posiciones. En las posiciones pares aceptaremos sólo valores enteros pares y en las
+posiciones impares aceptaremos sólo valores enteros impares.
+Función para obtener valores aleatorios de un rango: Math.random() * (max - min) + min; 
+let array = new Array(10)
+rellenar(array)
+console.log(array)*/
+
+
+
+/* 3. Dado dos arrays de 10 posiciones con valores aleatorios, realiza una función que una estos
+dos arrays y elimine los valores que están repetidos. Deberemos controlar estas
+repeticiones porque la función deberá devolver el número de valores eliminados.
+Finalmente mostraremos el array resultante al que previamente hemos eliminado los
+huecos que se han dejado al eliminar los valores repetidos. Puedes utilizar cualquiera de
+los métodos disponibles para trabajar con arrays. 
+
+let array1 = new Array(10)
+let array2 = new Array(10)
+let resultado =  repetidos(array1,array2)
+console.log(resultado)*/
+
+
+/* 4. Solicita nombres por teclado, transfórmalos a mayúsculas e introdúcelos en un array.
+Ordena el array por orden alfabético. ¿Cuántas palabras empiezan por vocal? 
+
+
+let resultado = ordenacion()
+console.log(resultado)
+
+let seguir = true
+let opcion = 0
+        do {
+            alert("Eliga 1 para sumar" + "\n" + "0 para salir")
+            opcion = parseInt(prompt("Introduzca una opcion"))
+            switch (opcion) {
+                case 1:
+                    alert("jajajajaj")
+                    seguir = false;
+                    break;
+            
+                default:
+                    alert("Opcion no valida prueba con otro valor")
+                    break;
+            }
+        } while (seguir);*/
+
+        let jeje = ["Pablo","ainhoa","pablo","Alvaro","Ainhoa","alvaro","aib"]
+console.log(jeje.sort(comparar2))
+    </script>
+    
+</body>
+</html>
